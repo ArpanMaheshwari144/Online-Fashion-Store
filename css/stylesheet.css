@@ -1,0 +1,341 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Poppins', sans-serif;
+	color: #000;
+}
+
+body {
+	zoom: auto;
+	overflow-x: hidden;
+}
+
+header#main {
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+}
+a.button, button.button {
+	background-color: #d90429;
+	color: #fff;
+}
+a.button:hover , button.button:hover {
+	transition: 0.3s ease-out;
+	background-color: #000;
+	color: #fff;
+}
+.bg-red {
+	background-color: #d90429;
+}
+div.bg-light-red {
+	background-color: #ffcad4;
+}
+form.bg-light-red {
+	background-color: #ffcad4;
+}
+*.text-red {
+	color: #d90429;
+}
+a.text-red {
+	color: #d90429;
+}
+a.text-red:hover {
+	color: #000;
+}
+
+/* Preloader */
+div#preloader-div {
+	height: auto;
+	width: 100%;
+	position: fixed;
+	overflow: hidden;
+	z-index: 20;
+}
+div#preloader-div div.inside-loader {
+	height: 100vh;
+	width: 100%;
+	background-color: #fff;
+}
+div#preloader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #d90429;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Popups */
+div#popup-div {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 15;
+	display: none;
+	overflow: hidden;
+}
+div#popup-div div.container-fluid {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+div#signup-card {
+	display: none;
+}
+div#login-card {
+	display: none;
+}
+form.login-signup-form div input {
+	outline: none;
+	border: none;
+	border: 2px solid #d90429;
+	background-color: transparent;
+	color: #000;
+}
+form.login-signup-form div input::placeholder {
+	color: #d90429;
+}
+form#search-bar div {
+	padding: 0px;
+	border: 2px solid #d90429;
+}
+form#search-bar div input {
+	outline: none;
+	background-color: transparent;
+	border: none;
+	color: #d90429;
+}
+form#search-bar div input::placeholder {
+	color: #000;
+}
+
+/* All Buttons */
+button.btn-red {
+	background-color: #d90429;
+	color: #fff;
+}
+button.btn-red:hover {
+	font-weight: bolder;
+	color: #d90429;
+	background-color: #fff;
+}
+td.btn-red {
+	font-weight: bolder;
+	background-color: #d90429;
+	color: #fff;
+}
+a.btn-red {
+	background-color: #d90429;
+	color: #fff;
+}
+a.btn-red:hover {
+	font-weight: bolder;
+	color: #d90429;
+	background-color: #fff;
+}
+button#popup-close-button {
+	position: absolute;
+	right: 0px;
+}
+
+/* Navigation Bar */
+nav a label {
+	cursor: pointer;
+	font-size: 25px;
+}
+label.logo-text1 {
+	color: #d90429;
+}
+label.logo-text2 {
+	color: #000;
+}
+ul li.nav-linkedList a {
+	color: #d90429;
+}
+ul li.nav-linkedList a:hover {
+	transition: 0.3s ease;
+	color: #000;
+}
+div.dropdown-menu {
+	background-color: #d90429;
+	color: #fff;
+	border-radius: 0px;
+	border: none;
+}
+div.dropdown-menu a.dropdown-item {
+	color: #fff;
+}
+
+/* Sidebar */
+section#sidebar {
+	width: 90vw;
+	height: 150vh;
+	position: fixed;
+	background-color: #fff;
+	z-index: 10;
+	margin-left: -92vw;
+	transition: 0.5s ease;
+	display: none;
+	overflow-y: scroll;
+}
+section#sidebar.active {
+	transition: 0.5s ease;
+	margin-left: 0vw;
+}
+button#sidebar-toggler {
+	display: none;
+}
+ul.sidebar-list * {
+	font-size: 20px;
+}
+div.sidebar-dropdown-menu {
+	display: none;
+}
+
+/* Home Section */
+section#home-section {
+	height: auto;
+	width: 100%;
+	background-color: #fff;
+}
+div.product-card {
+	height: auto;
+	width: 250px;
+}
+div.product-card img.product-img {
+	width: 300px;
+}
+div.product-card form.addtocart-form {
+	background-color: #d90429;
+}
+div.product-card form.addtocart-form * {
+	color: #fff;
+}
+button.addtocart-button {
+	background-color: #fff;
+}
+a.product-card-link {
+	outline: none;
+}
+img.thumbnail-image {
+	height: 70px;
+	width: 70px;
+}
+div.explore-product-cards {
+	transition: 0.5s ease;
+	background-size: 100% auto;
+}
+div.explore-product-cards:hover {
+	transition: 0.5s ease;
+	background-size: 120% auto;
+}
+div#explore-card-01 {
+	height: 520px;
+	width: 100%;
+	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("../images/explore/jacket.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+} 
+div#explore-card-02 {
+	height: 251.5px;
+	width: 100%;
+	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("../images/explore/shoes.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+} 
+div#explore-card-03 {
+	height: 251.5px;
+	width: 100%;
+	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("../images/explore/jeans.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+} 
+div#exclusive-div {
+	height: auto;
+	width: 100%;
+	background-image: linear-gradient(to right,rgba(0,0,0,0.8),rgba(0,0,0,0.1)),url("../images/slide/slide04.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+img.customer-img {
+	height: 100px;
+	width: auto;
+}
+
+
+/* Cart */
+img.cart-thumbnail-img {
+	height: 170px;
+	width: 170px;
+}
+td.quantity-number input {
+	width: 70px;
+	font-size: 20px;
+	font-weight: bolder;
+	color: #000;
+	margin-top: -1.5px;
+	outline: none;
+	border: none;
+}
+
+
+/* Footer */
+footer#footer {
+	height: auto;
+	width: 100%;
+	background-color: #eee;
+}
+div.social-media-icons a {
+	transition: 0.3s ease;
+}
+div.social-media-icons a:hover {
+	transition: 0.3s ease;
+	box-shadow: 0px 0px 7px #000;
+	transform: scale(1.1);
+	z-index: 10;
+	justify-content: center;
+}
+
+
+/* Media Query */
+@media (max-width: 767px)
+{
+	body {
+		zoom: 80%;
+	}
+	div#popup-div {
+		height: 100%;
+		overflow-y: scroll;
+	}
+	div#popup-div div.container-fluid {
+		height: 120vh;
+	}
+	section#sidebar {
+		display: block;
+	}
+	button#sidebar-toggler {
+		display: block;
+	}
+	div.navbar-collapse {
+		display: none;
+	}
+	div.product-card * {
+		font-size: 15px;
+	}
+	div#offer-card-01 {
+		height: 300px;
+	}
+	div#preloader-div div.inside-loader {
+		height: 150vh;
+	}
+	div#explore-card-01 {
+		height: 245px;
+	}
+}
+
